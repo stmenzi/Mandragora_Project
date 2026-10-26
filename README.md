@@ -1,9 +1,8 @@
-# Mandragora_Project
 # Mandragora H6H Analysis
 
-Data and Python code used for the comparative sequence analysis of H6H in Mandragora officinarum.
+Data and Python code supporting the study **"Comparative sequence analysis of hyoscyamine 6β-hydroxylase in Mandragora officinarum"**.
 
-## Sequences
+## Protein Sequences
 
 - Mandragora officinarum — A0A6M6R352
 - Hyoscyamus niger — P24397
@@ -11,13 +10,26 @@ Data and Python code used for the comparative sequence analysis of H6H in Mandra
 - Anisodus tanguticus — Q6V0J1
 - Anisodus acutangulus — A2IBI0
 
-## Files
+## Contents
 
-- `H6H_all_sequences.fasta` — input protein sequences
-- `H6H_aligned.fasta` — MAFFT alignment
-- `H6H_analysis.py` — Python analysis
-- `H6H_pairwise_identity_aligned.csv` — pairwise sequence identities
-- `H6H_Mandragora_substitutions.csv` — Mandragora-specific substitutions
-- `H6H_mutation_ranking_v2.csv` — exploratory mutation ranking
+- Protein sequences and MAFFT alignment
+- Python analysis scripts
+- Pairwise sequence identity and amino-acid substitution tables
+- Exploratory mutation ranking and figures
+- Leave-One-Out robustness analysis
+- BLOSUM62 substitution scores
 
-The prioritization score is exploratory and should not be interpreted as experimental evidence of functional impact.
+## Main Results
+
+- 40 consensus-based amino-acid differences
+- 27 unanimous comparator differences
+- 35/40 differences supported in all Leave-One-Out comparisons
+- G220C identified as the highest-ranked candidate
+
+## Reproducibility
+
+The `12_extended_analysis` folder contains the updated Python script and CSV results.
+
+## Note
+
+All analyses are computational and exploratory. The results do not establish functional effects of amino-acid substitutions.
